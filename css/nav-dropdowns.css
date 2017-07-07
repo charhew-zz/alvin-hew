@@ -1,0 +1,29 @@
+
+/*when a drop down is activated, this will also be activated. 
+it forces the page content to slide down as well to give the illusion that 
+the dropdown is PUSHING the content down.*/
+#dropdown-buffer {
+	height: 60px;
+	/*height must match that of the dropdowns*/
+	display: none;
+}
+
+.contact-info-dropdown {
+	clear: both;
+	padding:0;
+	background: #666;
+	color: #fff;
+	text-align: right;
+	display: none;
+	height: 60px;
+	vertical-align: middle;
+}
+
+/*the labels like "email" or "youtube" etc*/
+.contact-info-dropdown h6 {
+	font-family: 'Open Sans';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline;
+	font-weight: 300;
+}

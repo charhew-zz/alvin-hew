@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,400);
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700);
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*default paragraph style*/
+p {
+	font-family: 'Neuton';
+	font-size: 1.2rem;
+	color: #333;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+/*background on all pages*/
+body {
+	background: url('../img/bg/cream_dust.png');
+}
+
+/*centers content, adds side margins*/
+.wrapper {
+	width: 88%;
+	margin: auto;
+}
+
+/*nav bar*/
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	line-height: 3.5rem;
+	background: white;
+	z-index: 200;
+	font-family: 'Lato';
+	font-size: .9rem;
+	word-spacing: .2rem;
+	font-weight: 400;
+}
+
+/*logo*/
+nav #logo {
+	float: left;
+	text-transform: uppercase;
+}
+
+/*link items container*/
+nav #links {
+	float: right;
+}
+
+/*all nav bar links*/
+nav a {
+	text-decoration: none;
+	color: #333;
+	transition: color .2s;
+	cursor: pointer;
+	height: 3.5rem;
+}
+
+nav a:hover {
+	color: #999;
+}
+
+/*only the menu links*/
+nav #links a {
+	margin-left: 2rem;
+	letter-spacing: -1px;
+}
+
+/*
+wraps all the visible content of the page, and
+part of ensuring that the footer is always pushed to the bottom*/
+.all-content-wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+/*wraps the main content (i.e. not the footer or nav)*/
+.body-content-wrapper {
+	padding-bottom: 200px; /*height of footer*/
+}
+
+footer {
+	background: #333;
+	color: #fff;
+	font-family: 'Lato';
+	font-size: .8rem;
+	padding: 5rem 0;
+	margin-top: 5rem;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 200px; /*height of footer*/
+}
+
+footer a {
+	color: #ccc;
+	text-decoration: none;
+	margin: 0 1rem;
+}
+
+footer a:hover {
+	color: #999;
+}
+
+footer h6 {
+	color: #999;
+	margin: 0;
+	margin-top: 1rem;
+	padding: 0;
+	font-size: .7rem;
+}
+
+/*title of each page*/
+h2.page-title {
+	font-family: 'Lato';
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3rem;
+	letter-spacing: 0;
+	word-spacing: 1rem;
+	padding-top: 5rem;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+
+
+h3 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #333;
+	margin: 0;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #333;
+	margin: 0;
+}
+
+#contact-container {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+/*email me at*/
+#contact-container h4 {
+	font-size: .9rem;
+	font-weight: 400;
+	color: #333;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	word-spacing: 2px;
+}
+
+/*mail@alvinhew.com*/
+#contact-container h3 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #333;
+	margin: 0;
+}
+
+
+
+.thumb {
+	transition: opacity .5s;
+}
+
+.thumb:hover {
+	opacity: 0.9;
+}
+
+.button {
+	text-decoration: none;
+	color: #333;
+	border: 1px solid #333;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	margin: 1.1rem;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	font-family: 'Lato';
+	font-size: .8rem;
+}
+
+.button:hover {
+	background: #333;
+	color: #fff;
+}
+
+.centered-button-container {
+	text-align: center;
+	margin-top: 4rem;
+}
+
+/*reduces the top margin on certain buttons*/
+.centered-button-container.smaller-top-margin {
+	margin-top: 2rem;
+}
+
+/*remove underline on video page thumbnail links*/
+#videos a.lightbox_trigger {
+	text-decoration: none;
+}
+
+.colon {
+	font-family: 'Times New Roman';
+}
+
+
+
+
+.row:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+
+[class*='col-'] {
+	float: left;
+	padding: 0 2rem;
+}
+
+[class*='col-']:first-of-type {
+	padding-left: 0;
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+.col-1of3 {
+	width: 33.33%;
+}
+
+.col-2of3 {
+	width: 66.66%;
+}
+

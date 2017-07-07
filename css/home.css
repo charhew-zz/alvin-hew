@@ -1,0 +1,69 @@
+/*home page styling*/
+
+/*latest professional and personal work*/
+#home .featured-work {
+	background-color: #fff;
+	padding: 3rem 0;
+}
+
+#home .featured-work:first-of-type {
+	margin-top: 5rem;
+}
+
+/*extra padding to make more space before the footer*/
+#home .featured-work:last-of-type {
+	padding-bottom: 5rem;
+}
+
+/*removes gap between footer and the last featured-work box*/
+#home footer {
+	margin-top: 0;
+}
+
+#home .featured-work img {
+	width: 33%;
+}
+
+/*remove the underlines on the images*/
+#home .featured-work a {
+	text-decoration: none;
+}
+
+#home .featured-work h2 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3rem;
+	letter-spacing: .1rem;
+	word-spacing: .3rem;
+}
+
+/*giant title*/
+h1.home-title {
+	font-family: 'Lato';
+	font-weight: 600;
+	text-transform: none;
+	text-align: center;
+	font-size: 6rem;
+	letter-spacing: 0;
+	word-spacing: 1rem;
+	padding-top: 5rem;
+	margin: 0;
+	margin-top: 4rem;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+
+/*subtitle*/
+h2.home-title {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3rem;
+	letter-spacing: .1rem;
+	word-spacing: .3rem;
+	margin: 0;
+	padding: 0;
+
+}
